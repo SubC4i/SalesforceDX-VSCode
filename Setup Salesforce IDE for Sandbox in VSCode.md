@@ -62,6 +62,9 @@ Works with both production and sandbox instances. Replaces MavensMate IDE for Sa
 ## 6) Enable Auto-Push/Compile Code on Save
 - In project folder `.vscode`, open file `settings.json` and add the following lines:
     - ` "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": true, `
+
+## 7) Enable Running Test Classes
+- In project folder `.vscode`, open file `settings.json` and add the following lines:
     - ` "salesforcedx-vscode-core.retrieve-test-code-coverage": true `
     ### Sample `settings.json`:
     ~~~json
