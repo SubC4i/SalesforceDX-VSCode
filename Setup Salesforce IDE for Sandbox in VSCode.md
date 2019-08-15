@@ -25,6 +25,9 @@ Works with both production and sandbox instances. Replaces MavensMate IDE for Sa
 ## 4) Update package.xml
 - In project folder `manifest`, open and edit package.xml file for metadata types
 - Alternatively, use the VSCode extension `Salesforce Package.xml Generator Extension for VS Code` to generate the syntax for you
+    - Easiest way to pull metadata where the wildcard (*) symbol is not allowed
+    - Certain metadata must be populated in the package.xml with explicit names
+    - Example: For Dashboards, you must list the name of every dashboard you want to retrieve in order for it to be pulled from the source org
     ### Sample `package.xml`:
     ~~~xml
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
