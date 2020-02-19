@@ -28,6 +28,8 @@ Works with both production and sandbox instances. Replaces MavensMate IDE for Sa
     - Easiest way to pull metadata where the wildcard (*) symbol is not allowed
     - Certain metadata must be populated in the package.xml with explicit names
     - Example: For Dashboards, you must list the name of every dashboard you want to retrieve in order for it to be pulled from the source org
+- Recommended metatdata types to include: `ApexClass, ApexComponent, ApexPage, ApexTrigger, AssignmentRules, AuraDefinitionBundle, CustomLabels, CustomMetadata, CustomObject, Dashboard, DuplicateRule, EmailTemplate, FlexiPage, Flow, FlowCategory, FlowDefinition, GlobalValueSet, HomePageComponent, HomePageLayout, Layout, Letterhead, LightningBolt, LightningComponentBundle, LightningExperienceTheme, MatchingRules, Report, Scontrol, SharingRules, StaticResource, Workflow`
+
     ### Sample `package.xml`:
     ~~~xml
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
