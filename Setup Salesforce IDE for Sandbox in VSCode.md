@@ -15,7 +15,9 @@ Works with both production and sandbox instances. Replaces MavensMate IDE for Sa
 
 ## 2) Create Project
 - Open the Command Palette (press Ctrl+Shift+P on Windows) and run `SFDX: Create Project with Manifest`
+- Select `Standard` and press Enter
 - Type name for project (will also be folder name on hard drive) and press Enter
+- Select folder location (project files will be created in a new folder within the location you choose)
 
 ## 3) Authorize Salesforce Org
 - Open Command Palette and run `SFDX: Authorize an Org`
