@@ -78,7 +78,6 @@ Works with both production and sandbox instances. Replaces MavensMate IDE for Sa
         "**/bower_components": true,
         "**/.sfdx": true
     },
-    "eslint.nodePath": "c:\\Users\\name\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-46.7.0\\node_modules",
     "workbench.colorTheme": "Sublime MavensMate Monokai",
     "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": true,
     "salesforcedx-vscode-core.show-cli-success-msg": false,
