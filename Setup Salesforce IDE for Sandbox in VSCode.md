@@ -30,7 +30,7 @@ Works with both production and sandbox instances. Replaces MavensMate IDE for Sa
     - Easiest way to pull metadata where the wildcard (*) symbol is not allowed
     - Certain metadata must be populated in the package.xml with explicit names
     - Example: For Dashboards, you must list the name of every dashboard you want to retrieve in order for it to be pulled from the source org
-- Recommended metatdata types to include: `ApexClass, ApexComponent, ApexEmailNotifications, ApexPage, ApexTestSuite, ApexTrigger, AssignmentRule, AssignmentRules, AuraDefinitionBundle, CustomField, CustomMetadata, CustomObject, CustomPageWebLink, Dashboard, DuplicateRule, EmailTemplate, FlexiPage, Flow, FlowCategory, FlowDefinition, HomePageComponent, HomePageLayout, Layout, LightningBolt, LightningComponentBundle, MatchingRule, MatchingRules, Report, SharingCriteriaRule, SharingOwnerRule, SharingRules, StaticResource, ValidationRule, Workflow, WorkflowAlert, WorkflowFieldUpdate, WorkflowRule, WorkflowTask`
+- Recommended metatdata types to include: `ApexClass, ApexComponent, ApexEmailNotifications, ApexPage, ApexTestSuite, ApexTrigger, AssignmentRule, AssignmentRules, AuraDefinitionBundle, CustomField, CustomMetadata, CustomObject, CustomPageWebLink, Dashboard, DuplicateRule, EmailTemplate, FlexiPage, Flow, FlowCategory, FlowDefinition, HomePageComponent, HomePageLayout, Layout, LightningBolt, LightningComponentBundle, MatchingRule, MatchingRules, Report, SharingCriteriaRule, SharingOwnerRule, SharingRules, StaticResource, ValidationRule, WebLink, Workflow, WorkflowAlert, WorkflowFieldUpdate, WorkflowRule, WorkflowTask`
 
     ### Sample `package.xml`:
     ~~~xml
