@@ -61,7 +61,7 @@ Works with both production and sandbox instances. Replaces MavensMate IDE for Sa
     ~~~
 
 ## 5) Retrieve Metadata
-- Right-click on package.xml and select `SFDX: Retrieve Source in Manifest from Org`
+- In project folder `manifest`, right-click on file `package.xml` and select `SFDX: Retrieve Source in Manifest from Org`
 
 ## 6) Enable Auto-Push/Compile Code on Save
 - In project folder `.vscode`, open file `settings.json` and add the following lines:
