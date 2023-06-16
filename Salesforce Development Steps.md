@@ -37,7 +37,7 @@ Using VS Code, SFDX, and GitHub
 - Recommended metatdata types to include: `ApexClass, ApexComponent, ApexEmailNotifications, ApexPage, ApexTestSuite, ApexTrigger, AssignmentRule, AssignmentRules, AuraDefinitionBundle, CustomField, CustomMetadata, CustomObject, CustomPageWebLink, Dashboard, DuplicateRule, EmailTemplate, FlexiPage, Flow, FlowCategory, FlowDefinition, HomePageComponent, HomePageLayout, Layout, LightningBolt, LightningComponentBundle, MatchingRule, MatchingRules, Report, SharingCriteriaRule, SharingOwnerRule, SharingRules, StaticResource, ValidationRule, WebLink, Workflow, WorkflowAlert, WorkflowFieldUpdate, WorkflowRule, WorkflowTask`
 
 	**Sample** `package.xml`:
-	~~~xml
+	```xml
 	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 	<Package xmlns="http://soap.sforce.com/2006/04/metadata">
 		<types>
@@ -62,7 +62,7 @@ Using VS Code, SFDX, and GitHub
 		</types>
 		<version>46.0</version>
 	</Package>
-	~~~
+	```
 
 ### 5) Retrieve Metadata
 - In project folder `manifest`, right-click on file `package.xml` and select `SFDX: Retrieve Source in Manifest from Org`
@@ -75,7 +75,7 @@ Using VS Code, SFDX, and GitHub
 - In project folder `.vscode`, open file `settings.json` and add the following lines:
 	- ` "salesforcedx-vscode-core.retrieve-test-code-coverage": true `
 	**Sample** `settings.json`:
-	~~~json
+	```json
 	{
 	"search.exclude": {
 		"**/node_modules": true,
@@ -87,11 +87,11 @@ Using VS Code, SFDX, and GitHub
 	"salesforcedx-vscode-core.show-cli-success-msg": false,
 	"salesforcedx-vscode-core.retrieve-test-code-coverage": true
 	}
-	~~~
+	```
 
 ## Development
 
-### 1) Connect to Git repo
+### 1) Connect to GitHub repo
 - Open the `Source Control` tab
 - Click on the `Initialize Repository` button
 - Authorize within GitHub website
