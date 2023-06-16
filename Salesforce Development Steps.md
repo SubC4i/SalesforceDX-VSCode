@@ -93,7 +93,8 @@ Using VS Code, SFDX, and GitHub
 
 ### 1) Connect to GitHub repo
 - Open the `Source Control` tab
-- Click on the `Initialize Repository` button
+- Click on the `Initialize Repository` button to load an existing local repo
+- Click on the `Publish to GitHub` button to create a new private/public remote repo
 - Authorize within GitHub website
 
 ### 2) Develop and compile directly to Sandbox org
