@@ -89,17 +89,46 @@ Using VS Code, SFDX, and GitHub
 	}
 	```
 
+## Main Repo Setup
+
+### 1) Follow steps 1-5 under the `IDE Setup` section above
+- Under normal circumstances, this only needs to be completed once per production org
+- Include the following metadata types: `ApexClass, ApexComponent, ApexEmailNotifications, ApexPage, ApexTestSuite, ApexTrigger, AssignmentRule, AssignmentRules, AuraDefinitionBundle, CustomField, CustomMetadata, CustomObject, CustomPageWebLink, CustomPermission, DuplicateRule, FlexiPage, Flow, FlowCategory, FlowDefinition, GlobalValueSet, HomePageComponent, HomePageLayout, LightningBolt, LightningComponentBundle, MatchingRule, MatchingRules, Scontrol, SharingCriteriaRule, SharingOwnerRule, SharingRules, StaticResource, WebLink, Workflow, WorkflowAlert, WorkflowFieldUpdate, WorkflowRule, WorkflowTask`
+
+### 2) In VS Code, create and upload the GitHub repo
+- Open the `Source Control` tab
+- Click on the `Publish to GitHub` button
+- From the drop-down list, select `Publish to GitHub private repository`
+- Note: Make sure to authorize and/or verify connection to the correct GitHub account
+
+### 3) Warning message will appear, Click OK to dismiss it
+```console
+The git repository at "c:\...\Your-Repo-Name" has too many active changes, only a subset of Git features will be enabled.
+
+Source: Git (Extension)
+```
+
+### 4) GitHub repo is now populated and ready to use
+- Contents defined via `package.xml`
+
 ## Development
 
-### 1) Connect to GitHub repo
+### 1) Copy URL for GitHub repo
+- Navigate to desired repository in GitHub and click the `<> Code` button to copy/paste the URL
+
+### 1) In VS Code, connect to GitHub repo
+- To start, do not have any Folders or Files open in VS Code
 - Open the `Source Control` tab
-- Click on the `Initialize Repository` button to load an existing local repo
-- Click on the `Publish to GitHub` button to create a new private/public remote repo
-- Authorize within GitHub website
+- Click on the `Clone Repository` button
+- In pop-up window, copy/paste the repository URL into the input line and press Enter
+- Choose folder on local machine and click `Select as Repository Destination` (project files will be created in a new folder within the location you choose)
 
-### 2) Develop and compile directly to Sandbox org
+### 2) Authorize Salesforce org(s) for development
+- Refer to `IDE Setup` Step 3
 
-### 3) Periodically commit and push changes to GitHub
+### 3) Develop and compile directly to Sandbox org
+
+### 4) Periodically commit and push changes to GitHub
 - Option A: VS Code Interface
     - Open the `Source Control` tab
     - Type brief description in `Message` input
@@ -109,7 +138,7 @@ Using VS Code, SFDX, and GitHub
     - Open the `Terminal` window and use the commands below
     ```javascript
     //Stage All Changes
-    git add
+    git add .
     //Commit Changes to Local Repo
     git commit -m "your message"
     //Push from Local to Remote Repo
